@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toy Haven | All Products & Collectibles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+      <div class="announcement-content">
+        <span>🇱🇰 <strong>Sri Lanka's #1 Toy Store:</strong> Free Islandwide Delivery on orders over Rs. 15,000!</span>
+        <span class="announcement-badge">Cash on Delivery Available</span>
+      </div>
+    </div>
+
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo">
+          <span class="logo-icon">🏎️</span>
+          <span class="logo-text">Toy Haven<span class="logo-dot">.</span></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="wishlist.html">Wishlist <span id="wishlist-badge" class="badge-mini">0</span></a></li>
+          <li><a href="feedback.html">Support</a></li>
+          <li><a href="cart.html">Cart <span id="cart-badge" class="cart-counter">0</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="catalog-page">
+      <section class="catalog-hero">
+        <div class="catalog-hero-content">
+          <span class="eyebrow">Sri Lanka's Official Diecast Hub</span>
+          <h1>Explore The Full Toy Collection</h1>
+          <p>
+            From high-speed Hot Wheels to stunt monster trucks and modular race tracks. All genuine, inspected, and shipped islandwide.
+          </p>
+        </div>
+      </section>
+
+      <!-- Filter, Search and Sorting Toolbar -->
+      <section class="catalog-toolbar card-panel">
+        <div class="toolbar-search">
+          <span class="search-icon">🔍</span>
+          <input
+            type="text"
+            id="catalog-search"
+            class="form-control catalog-search-input"
+            placeholder="Search toy cars, tracks, monster trucks..."
+          />
+        </div>
+
+        <div class="toolbar-filters">
+          <div class="filter-pills-group">
+            <button type="button" class="filter-pill active" data-category="all">All Items</button>
+            <button type="button" class="filter-pill" data-category="Hot Wheels">Hot Wheels 🔥</button>
+            <button type="button" class="filter-pill" data-category="Car Toys">Car Toys 🏎️</button>
+          </div>
+
+          <div class="sort-wrapper">
+            <label for="catalog-sort" class="sort-label">Sort by:</label>
+            <select id="catalog-sort" class="form-control sort-select">
+              <option value="featured">Featured First</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Top Customer Rated</option>
+              <option value="name-asc">Alphabetical (A - Z)</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <div class="catalog-meta-row">
+        <span id="catalog-count" class="catalog-count-text">Showing 12 toys in Sri Lanka</span>
+        <span class="currency-tag">Prices displayed in Sri Lankan Rupees (LKR)</span>
+      </div>
+
+      <!-- Main Product Grid -->
+      <div id="grid" class="product-grid"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">🏎️</span> Toy Haven<span class="logo-dot">.</span>
+          </div>
+          <p>Sri Lanka's favorite toy store for diecast models, racing tracks, and collector edition playsets.</p>
+          <p class="footer-contact">📍 No. 42, Galle Road, Colombo 03 • 📞 +94 11 234 5678</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="cart.html">View Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="feedback.html">Support & FAQ</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="feedback.html#contact">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Toy Haven Sri Lanka. All rights reserved. Prices in Sri Lankan Rupees (LKR).</p>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

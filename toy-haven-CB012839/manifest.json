@@ -1,0 +1,10 @@
+
+{
+  "name": "Toy Haven",
+  "short_name": "ToyHaven",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }
+  ]
+}
